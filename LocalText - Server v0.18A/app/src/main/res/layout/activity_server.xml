@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jordan.localtext.ServerActivity">
+
+
+    <!--Text view for displaying debug information -->
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Server Connected!"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:theme="@style/text" />
+
+    <!--Text view for displaying the ip address. -->
+    <TextView
+        android:id="@+id/ipAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="IP Address"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:theme="@style/text" />
+
+    <!--Text view for pass code for the next client. -->
+    <TextView
+        android:id="@+id/passCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Passcode"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:theme="@style/text" />
+
+    <Button
+        android:id="@+id/stopConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Stop Connection"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activeClientsTV"
+        android:layout_gravity="center_horizontal"
+        android:text="No Active Clients"/>
+    <!-- Layout to display the clients that are active. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/activeClientsLayout">
+    </LinearLayout>
+
+    <!-- Kick client buttons -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/kickButton"
+        android:text="KICK CLIENTS"/>
+
+    <!-- TextView to display the uptime of the server thus far -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/uptimeTV"
+        android:text="Uptime"/>
+
+</android.widget.LinearLayout>
