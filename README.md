@@ -12,3 +12,6 @@ ensure java is installed on your computer.
 
 The Server, when running on your phone, provides the IP Address and Passcode so that you can connect using your respective Client.
 The PC client can also scan local IP addresses on your network to find a few devices to narrow it down. ("Scan Subnet" button)
+
+Please ensure you have connected using a Wireless or Wired ethernet connection for all devices you intend to use.
+Once a user has connected to the server using a client device, they can send and receive text messages using the client device, which will text using the server device's SMS. This is done through the local ethernet connection that you are running on both your server and client device. 
